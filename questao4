@@ -1,0 +1,1 @@
+SELECT author, words FROM books WHERE words >= 150000
