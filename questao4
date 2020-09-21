@@ -1,0 +1,3 @@
+select author, SUM(words) AS "numero_palavras" from books group by author having SUM(words) > 1000000
+
+select author, AVG(words) AS "media_palavras" from books group by author having AVG(words) > 150000
