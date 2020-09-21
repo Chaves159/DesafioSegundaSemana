@@ -1,3 +1,6 @@
-SELECT nome, nome_h FROM persons INNER JOIN hobbies on persons.id = hobbies.id
+INSERT INTO persons (nome, age) VALUES ('Chibinha', 20);
+INSERT INTO hobbies (person_id, nome_h) VALUES (8,'Guitar')
 
-SELECT nome, nome_h FROM persons INNER JOIN hobbies on persons.id = hobbies.id WHERE nome = 'Bobby McBobbyFace'
+SELECT nome, nome_h FROM persons JOIN hobbies on persons.id = hobbies.id
+
+SELECT nome, nome_h FROM persons JOIN hobbies on persons.id = hobbies.id WHERE nome = 'Bobby McBobbyFace'
